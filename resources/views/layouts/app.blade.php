@@ -10,14 +10,23 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <style>
+            h2, h3 {
+                margin-top: 10px;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
             <nav class="navbar navbar-default">
-                <!-- Navbar Contents -->
+                <div class="text-center">
+                    <h2 class="blog-header-logo text-dark">Todo App!</h2>
+                </div>
             </nav>
         </div>
-
-        @yield('content')
+        <div class="container">
+            @yield('content')
+        </div>
     </body>
 </html>

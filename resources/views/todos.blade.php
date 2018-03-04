@@ -54,8 +54,8 @@
 
                     <!-- Table Headings -->
                     <thead>
-                        <th>todo</th>
-                        <th>&nbsp;</th>
+                        <th>Todo</th>
+                        <th>Actions</th>
                     </thead>
 
                     <!-- Table Body -->
@@ -64,10 +64,9 @@
                             <tr>
                                 <!-- todo Name -->
                                 <td class="table-text">
-                                    <div>{{ $todo->name }}</div>
+                                    <div><a href="{{ url('todo/'.$todo->id) }}">{{ $todo->name }}</a></div>
                                 </td>
 
-                                <td>
                                     <!-- Delete Button -->
                                     <td>
                                         <form action="{{ url('todo/'.$todo->id) }}" method="POST">
@@ -79,7 +78,6 @@
                                             </button>
                                         </form>
                                     </td>
-                                </td>
                             </tr>
                         @endforeach
                     </tbody>
