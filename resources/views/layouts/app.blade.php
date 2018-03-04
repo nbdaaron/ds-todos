@@ -21,7 +21,7 @@
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="text-center">
-                    <h2 class="blog-header-logo text-dark">Todo App!</h2>
+                    <h2 class="blog-header-logo text-dark"><a href="{{ url('todo') }}">Todo App!</a></h2>
                 </div>
             </nav>
         </div>

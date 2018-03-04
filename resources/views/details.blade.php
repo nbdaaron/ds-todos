@@ -8,7 +8,10 @@
         </div>
 
         <div class="panel-body">
-            {{$todo->description}}
+            ID: {{$todo->id}}<br>
+            Description: {{$todo->description}}<br>
+            Created At: {{$todo->created_at ?: 'N/A'}}<br>
+            Updated At: {{$todo->updated_at ?: 'N/A'}}
         </div>
     </div>
 @endsection
