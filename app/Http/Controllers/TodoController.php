@@ -57,7 +57,16 @@ class TodoController extends Controller
      */
     public function show($id)
     {
-        // Write the code for your assignment here.
+
+        $todo = Todo::where('id', '=', $id)->get();
+
+        if (count($todo) == 0) {
+            return redirect('/todo');
+        }
+
+        return view('details', [
+            'todo' => $todo[0]
+        ]);
     }
 
     /**
